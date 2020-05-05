@@ -1,0 +1,352 @@
+@charset "UTF-8";
+/**
+白っぽい文字色　#F7F9FE
+水色ｸﾞﾚｰ明　　#DCE8EB
+水色ｸﾞﾚｰ暗　　#BED2D9
+文字色暗　　　#526166
+/* 共通部分
+------------------------------- */
+html {
+    font-size: 100%;
+}
+body{
+    font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", sans-serif;
+    line-height: 1.7;
+    color: #432;
+}
+a {
+    text-decoration: none;
+}
+img {
+    max-width: 100%;
+}
+.wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 4%;
+}
+
+/* 大きな背景画像 */
+.big-bg {
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+}
+
+/* 見出し */
+.page-title {
+    font-size: 5rem;
+    font-family: 'Philosopher', serif;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+.sub-title {
+    font-size: 1.375rem;
+    padding: 0 8px 8px;
+    border-bottom: 2px #DCE8EB solid;
+    font-weight: normal;
+}
+
+/* ボタン */
+.button {
+    font-size: 1.375rem;
+    /*background: #DCE8EB;*/
+    background: #BED2D9;
+    color: #fff;
+    border-radius: 5px;
+    padding: 18px 32px;
+}
+.button:hover {
+    background: #DCE8EB;
+    transition:background-color,0.5s;
+}
+
+/* iframe */
+iframe {
+    width: 100%;
+}
+
+/* HEADER
+------------------------------- */
+.page-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 70px;
+    background-color: #BED2D9;
+    border-radius: 50%;
+    margin-top: 14px;
+    box-shadow: ;
+}
+.logo:hover {
+    background-color: #DCE8EB;
+    transition:background-color,0.5s;
+}
+
+
+.main-nav {
+    display: flex;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    margin-top: 34px;
+    list-style: none;
+}
+.main-nav li {
+    margin-left: 36px;
+    display: block;
+}
+.main-nav a {
+    color: #432;
+    }
+.main-nav a:hover {
+    background-color: #BED2D9;
+    border-radius: 50%;
+    transition: background-color,0.5s;
+}
+
+/* HOME
+------------------------------- */
+#home {
+    background-image: url(../images/top.jpg);
+    background-color: #ddd;
+    background-blend-mode: color-burn;
+    min-height: 100vh;
+
+}
+
+#home .page-title {
+
+    text-transform: none;
+}
+.home-content {
+    text-align: center;
+    margin-top: 10%;
+}
+.home-content p {
+    font-size: 1.125rem;
+    margin: 10px 0 42px;
+}
+
+
+
+
+
+/* MENU
+------------------------------- */
+.top-menu {
+    width: 1000px;
+    text-align: center;
+    padding-top: 215px;
+    margin: 40px auto;
+}
+.menu {
+    width: 1000px;
+    text-align: center;
+    margin: 40px auto;
+}
+
+.heading h1  {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: normal;
+    font-size: 1.8rem;
+    margin-bottom: 60px;
+    border-bottom: #BED2D9 solid 2px;
+}
+.menu-contents{
+    width:1100px;
+    height:360px;
+    display: flex;
+    justify-content:space-evenly;
+    margin-bottom: 30px;
+}
+.contents {
+    width: 30%;
+    background-color:#BED2D9;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.contents a {
+    color: #526166;
+}
+.contents:hover {
+    background-color:#DCE8EB;
+    transition: background-color,0.5s;
+    box-shadow: -1px -1px #BED2D9;
+}
+
+.item img{
+    width: 100%; 
+    height: 200px;
+    object-fit: cover;
+}
+.item p {
+    margin-top: 20px;
+}
+.text-contents {
+    width: 80%;
+    margin: 10px auto;
+ }
+.text-contents p{
+    font-size: 0.7em;
+    margin-bottom: 100px;
+}
+
+/*フッター*/
+.footer-contents{
+    height:40px;
+    background-color: #BED2D9;
+    color: #526166;
+    text-align: center;
+    font-size: 15px;
+    color: #fff;
+}
+/*SNS*/
+#sns{
+    width: 150px;
+    position: fixed;
+    top:360px;
+    left:50px;
+  }
+.sns-item {
+    margin-bottom: 15px;
+    display: block;
+    height: 25px;
+    font-size: 14px;
+}
+.sns-item span{
+    margin-left: 8px;
+}
+.sns-item img{
+    width: 20px;
+    height:20px
+}
+
+/* GREENページ*/
+#green-top{
+    background-image: url(../images/topimg.jpg);
+    height: 300px;
+}
+
+.green-contents {
+    width:1100px;
+    display: flex;
+    flex-wrap:wrap;
+    align-content:space-around;
+}
+.green-contents .contents{
+    width: 30%;
+    background-color:beige;
+    margin-left: auto;
+}
+/* INTERIORページ*/
+/* INTERIOR色　
+グレー味ガかった薄ピンク　#e1c0b6
+*/
+#interior-top {
+    background-image: url(../images/Interior-photo02.jpg);
+    height: 300px;
+    background-size: cover;
+}
+.green-contents .interior-contents{
+    width: 30%;
+    background-color:#e1c0b6;
+    margin-left: auto;
+    margin-bottom: 30px;
+}
+
+/* モバイル版
+------------------------------- */
+@media (max-width: 600px) {
+    .page-title {
+        font-size: 2.5rem;
+    }
+    .page-header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* HEADER */
+    .main-nav {
+        font-size: 1rem;
+        margin-top: 10px;
+    }
+    .main-nav li {
+        margin: 0 20px;
+    }
+
+    /* HOME */
+    .home-content {
+        margin-top: 20%;
+    }
+
+    /* NEWS */
+    .news-contents {
+        flex-direction: column;
+    }
+    #news .page-title {
+        margin-top: 30px;
+    }
+    article,
+    aside {
+        width: 100%;
+    }
+    aside {
+        margin-top: 60px;
+    }
+    .post-info {
+        margin-bottom: 30px;
+    }
+    .post-date {
+        width: 70px;
+        height: 70px;
+        font-size: 1rem;
+    }
+    .post-date span {
+        font-size: 0.875rem;
+        padding-top: 2px;
+    }
+    .post-title {
+        font-size: 1.375rem;
+    }
+    .post-cat {
+        font-size: 0.875rem;
+        margin-top: 10px;
+    }
+    .post-title,
+    .post-cat {
+        margin-left: 80px;
+    }
+
+    /* MENU */
+    .menu-content {
+        margin-top: 20%;
+    }
+
+    /* CONTACT */
+    #contact .page-title {
+        margin-top: 40px;
+    }
+
+    /* フォーム */
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        max-width: 100%;
+    }
+
+    /* 店舗情報・地図 / SNS */
+    #location .wrapper,
+    #sns .wrapper {
+        flex-direction: column;
+    }
+    .location-info,
+    .location-map,
+    .sns-box {
+        width: 100%;
+    }
+    .sns-box {
+        margin-bottom: 30px;
+    }
+}
